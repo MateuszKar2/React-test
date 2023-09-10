@@ -1,6 +1,6 @@
 import { BookList } from "./BookList/BookList";
 import { Product } from "./Product/Product";
-import cheese from "./assets/cheese.png"
+import cheese from "./pictures/cheese.png"
 
 const favoriteBooks = [
  { id: "id-1", name: "JS for beginners" },
