@@ -9,8 +9,6 @@ const favoriteBooks = [
  { id: "id-4", name: "Redux in depth" },
 ];
 
-const cheeseMy = <img src={cheese}/>
-
 const Profile = ({ name, email }) => (
  <div>
    <p>name: {name}</p>
@@ -52,7 +50,7 @@ export const App = () => {
      </div>
      <div>
        <Product
-       myCheese={cheeseMy}
+       myCheese={cheese}
        price={10.23}
        name="Cheese"
        buttonText="Add to cart"
@@ -60,7 +58,7 @@ export const App = () => {
      </div>
      <div>
        <Panel
-       title="User Profile">
+         title="User Profile">
          <Profile
          name="Jan"
          email="emailtest@pl"
