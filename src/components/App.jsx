@@ -1,3 +1,4 @@
+import { Alert } from "./Alert/Alert";
 import { BookList } from "./BookList/BookList";
 import { Product } from "./Product/Product";
 import cheese from "./pictures/cheese.png"
@@ -66,6 +67,9 @@ export const App = () => {
        </Panel>
        <Mailbox username="Mango" unreadMessage={[2,3,4,5]}/>
        <Mailbox username="Kiwi" unreadMessage={[]}/>
+     </div>
+     <div>
+      <Alert name={name} ></Alert>
      </div>
    </>
  );

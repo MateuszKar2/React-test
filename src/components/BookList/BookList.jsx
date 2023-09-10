@@ -11,3 +11,5 @@ export const BookList = ({ books }) => {
       </ul>
     )
   }
+
+  export default BookList;
