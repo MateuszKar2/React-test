@@ -1,8 +1,13 @@
 .alert {
     margin: 100px;
     padding: 20px;
-    display: flex;
-    border: 5px color purple;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: green;
+    width: 200px;
+
 }
 
 .alert.one {
@@ -14,22 +19,17 @@
 }
 
 .alert.three {
-    background-color: black;
+    background-color: blue;
 }
 
 .alert.four {
     background-color: burlywood;
 }
 
-.alert.five {
-    background-color: green;
-}
-
 .alert.is-outlined {
-    outline: 1px solid black;
+    outline: 5px solid purple;
 }
 
 .alert.is-elevated {
-    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px,
-      rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+    padding: 30px;
   }
