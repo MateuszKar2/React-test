@@ -1,10 +1,13 @@
-// import { Alert } from "./Alert/Alert";
-// import Alertsecond  from "./Alert/Alertsecond";
-// import Alertthird from "./Alert/Alertthird";
-import Alertmain from "./Alert/Alertmain";
+
 import { BookList } from "./BookList/BookList";
 import { Product } from "./Product/Product";
 import cheese from "./pictures/cheese.png"
+
+import Alertmain from "./Alert/Alertmain";
+
+import Eventsmain from "./Events/Eventsmain";
+
+
 
 const favoriteBooks = [
  { id: "id-1", name: "JS for beginners" },
@@ -45,7 +48,7 @@ const Mailbox = ({ unreadMessage, username }) => {
 export const App = () => {
  return (
    <>
-   <div
+   {/* <div
      style={{
        textDecoration: 'none',
        color: 'blue',
@@ -73,7 +76,8 @@ export const App = () => {
        <Mailbox username="Mango" unreadMessage={[2,3,4,5]}/>
        <Mailbox username="Kiwi" unreadMessage={[]}/>
      </div>
-     <Alertmain/>
+     <Alertmain/> */}
+     <Eventsmain/>
    </>
  );
 };
