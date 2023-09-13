@@ -1,4 +1,5 @@
 import { Alert } from "./Alert/Alert";
+import { Alertsecond } from "./Alert/Alertsecond";
 import { BookList } from "./BookList/BookList";
 import { Product } from "./Product/Product";
 import cheese from "./pictures/cheese.png"
@@ -37,6 +38,8 @@ const Mailbox = ({ unreadMessage, username }) => {
  )
 }
 
+
+
 export const App = () => {
  return (
    <>
@@ -69,7 +72,33 @@ export const App = () => {
        <Mailbox username="Kiwi" unreadMessage={[]}/>
      </div>
      <div>
-      <Alert name={name} ></Alert>
+          {/* <p style={alertStyle}>Style wbudowane</p>
+          <p style={alertStyle}>Vanilia CSS</p>
+          <p style={alertStyle}>CSS-moduły</p> */}
+          <Alert variant="info">
+            Style wbudowane
+            </Alert>
+          <Alert variant="error">
+            Vanilia CSS 
+            </Alert>
+          <Alert variant="success">
+            CSS-moduły
+            </Alert>
+            <Alertsecond variant="one">
+                eins
+            </Alertsecond>
+            <Alertsecond variant="two" outlined>
+                zwei
+            </Alertsecond>
+            <Alertsecond variant="three" elevated>
+                drei
+            </Alertsecond>
+            <Alertsecond variant="four" outlined elevated>
+                vier
+            </Alertsecond>
+            <Alertsecond variant="five">
+                funf
+            </Alertsecond>
      </div>
    </>
  );
