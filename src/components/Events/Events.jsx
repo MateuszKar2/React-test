@@ -1,43 +1,39 @@
 import React, {Component} from 'react';
 import css from "./Events.module.css";
 
+
+
 class Events extends Component {
 
-    static defaultProps = {
-        step: 1,
-        initialValue: 0,
-    };
-
-    static propptypes = {};
-
-
-
-
+        static defaultProps = {
+            step: 1,
+            initialValue: 0
+        } 
+ 
         state = {
             value: this.props.initialValue,
 
         };
-        // this.handleIncrement = this.handleIncrement.bind(this);
-        // this.handleDecrement = this.handleDecrement.bind(this);
 
 
-    handleIncrement(evt) {
-        console.log("Increment button was clicked!", evt);
-        console.log("this.props: ", this.props);
+    handleIncrement = () => {
+        this.setState((state, props) => ({
+            value: state.value + props.step
+        }))
     }
 
-    handleDecrement(evt) {
-        console.log("Increment button was clicked!", evt);
-        console.log("this.props: ", this.props);
+    handleDecrement = () => {
+        this.setState((state, props) => ({
+            value: state.value - props.step
+        }))
     }
 
     render() {
 
-        const step = this.step;
+        const { step } = this.props;
 
         return (
             <>
-                <span>{this.state.value}</span>
                 <button
                     className={css.button}
                     type="button"
@@ -45,9 +41,7 @@ class Events extends Component {
                 >
                     Increment by {step}
                 </button>
-
-                <span>0</span>
-
+                <span>{this.state.value}</span>
                 <button
                     className={css.button}
                     type="button"
