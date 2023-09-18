@@ -8,7 +8,7 @@ class Events extends Component {
         static defaultProps = {
             step: 1,
             initialValue: 0
-        } 
+        }
         state = {
             value: this.props.initialValue,
         };
