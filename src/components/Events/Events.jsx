@@ -9,25 +9,19 @@ class Events extends Component {
             step: 1,
             initialValue: 0
         } 
- 
         state = {
             value: this.props.initialValue,
-
         };
-
-
     handleIncrement = () => {
         this.setState((state, props) => ({
             value: state.value + props.step
         }))
     }
-
     handleDecrement = () => {
         this.setState((state, props) => ({
             value: state.value - props.step
         }))
     }
-
     render() {
 
         const { step } = this.props;
