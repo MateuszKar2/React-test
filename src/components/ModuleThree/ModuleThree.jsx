@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import LifeCycle from "./LifeCycle"
-import HTTPrequests from "./HTTPrequests";
+// import HTTPrequests from "./HTTPrequests";
 
 class ModuleThree extends Component {
 
@@ -11,9 +11,9 @@ class ModuleThree extends Component {
 
                 </LifeCycle>
 
-                <HTTPrequests>
+                {/* <HTTPrequests>
                     
-                </HTTPrequests>
+                </HTTPrequests> */}
             </>
         )
     }
