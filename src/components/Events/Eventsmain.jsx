@@ -3,7 +3,7 @@ import Toggle from "./Toggle";
 import Message from "./Message";
 import Form from "./Form";
 import LittleFrom from "./LittleForm";
-import HardForm from "./HardForm";
+// import HardForm from "./HardForm";
 
 export const Eventsmain = () => {
     return (
@@ -19,7 +19,7 @@ export const Eventsmain = () => {
             <Message/>
             <Form/>
             <LittleFrom/>
-            <HardForm/>
+            {/* <HardForm/> */}
         </div>
         </>
     )
