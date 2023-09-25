@@ -6,7 +6,8 @@
 // import Alertmain from "./Alert/Alertmain";
 
 import Eventsmain from "./Events/Eventsmain";
-import LifeCycleMain from "./LiveCycle/LifeCycleMain";
+import ModuleThree from "./ModuleThree/ModuleThree";
+
 
 
 
@@ -79,7 +80,7 @@ export const App = () => {
      </div>
      <Alertmain/> */}
      <Eventsmain/>
-     <LifeCycleMain/>
+     <ModuleThree/>
    </>
  );
 };
