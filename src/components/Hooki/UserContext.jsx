@@ -2,10 +2,10 @@
 //Nie wykorzystuj kontekstu, aby uniknąć przekazywania propsów kilka poziomów w dół.
 //Ten mechanizm przeznaczony jest dla wąskiego spektrum zadań.
 
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 
-const UserContext = createContext();
+ const UserContext = createContext();
 
 export const UserProvider = ({children}) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
