@@ -1,7 +1,9 @@
 import { Book } from "./UseState"
 import { Price } from "./UseEfect";
 import { SeveralEffects } from "./SeveralEffects";
-import { UserMenu } from "./UserMenu";
+import { MyUseRef } from "./MyUseRef";
+import { Player } from "./Player";
+// import { UserMenu } from "./UserMenu";
 
 
 
@@ -16,9 +18,11 @@ export const HookiMain = () => {
             <Book/>
             <SeveralEffects/>
             <Price/>
-                <UserProvider>
+                {/* <UserProvider>
                     <UserMenu />
-                </UserProvider>
+                </UserProvider> */}
+            <MyUseRef/>
+            <Player source="http://media.w3.org/2010/05/sintel/trailer.mp4" />
         </>
     )
 }
