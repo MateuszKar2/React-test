@@ -7,6 +7,7 @@
 
 import Eventsmain from "./Events/Eventsmain";
 import ModuleThree from "./ModuleThree/ModuleThree";
+import { HookiMain } from "./Hooki/HookiMain";
 
 
 
@@ -81,6 +82,7 @@ export const App = () => {
      <Alertmain/> */}
      <Eventsmain/>
      <ModuleThree/>
+     <HookiMain/>
    </>
  );
 };
