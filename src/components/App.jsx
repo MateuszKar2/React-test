@@ -2,14 +2,10 @@
 // import { BookList } from "./BookList/BookList";
 // import { Product } from "./Product/Product";
 // import cheese from "./pictures/cheese.png"
-
 // import Alertmain from "./Alert/Alertmain";
-
-import Eventsmain from "./Events/Eventsmain";
-import ModuleThree from "./ModuleThree/ModuleThree";
-import { HookiMain } from "./Hooki/HookiMain";
-
-
+// import Eventsmain from "./Events/Eventsmain";
+// import ModuleThree from "./ModuleThree/ModuleThree";
+// import { HookiMain } from "./Hooki/HookiMain";
 
 
 // const favoriteBooks = [
@@ -46,11 +42,16 @@ import { HookiMain } from "./Hooki/HookiMain";
 //  )
 // }
 
+  import { App9 } from "./09-nawigacja";
 
 
-export const App = () => {
- return (
-   <>
+  export const App = () => {
+  return (
+    <>
+    <App9/>
+
+
+
    {/* <div
      style={{
        textDecoration: 'none',
@@ -79,12 +80,11 @@ export const App = () => {
        <Mailbox username="Mango" unreadMessage={[2,3,4,5]}/>
        <Mailbox username="Kiwi" unreadMessage={[]}/>
      </div>
-     <Alertmain/> */}
+     <Alertmain/> 
      <Eventsmain/>
      <ModuleThree/>
-     <HookiMain/>
+     <HookiMain/> */}
    </>
  );
 };
 
-export default App;
