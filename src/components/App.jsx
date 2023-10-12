@@ -42,13 +42,13 @@
 //  )
 // }
 
-  import { App9 } from "./09-nawigacja";
+  import { App10 } from "./10-nawigacja";
 
 
   export const App = () => {
   return (
     <>
-    <App9/>
+    <App10/>
 
 
 
