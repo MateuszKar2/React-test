@@ -48,7 +48,7 @@
   export const App = () => {
   return (
     <>
-    <App10/>
+    
 
 
 
