@@ -30,3 +30,5 @@ export const App10 = () => {
 //Podział kodu na kilka plików to zadanie modułu budującego projekt, na przykład Webpack, a nie frameworku frontend. 
 //Create React App wewnętrznie wykorzystuje Webpack jak moduł budujący i wspiera dzielenie kodu bez dodatkowej konfiguracji.
 //Dzielenie kodu na podstawie ścieżek jest obowiązkowe w dowolnej aplikacji.
+
+dsafsdfsdfdsgf
