@@ -6,10 +6,11 @@ import { Location } from "./Location";
 
 export const App10 = () => {
     <>
-    {/* <Navigate/> */}
-    {/* <Login/> */}
-    {/* <Chain/> */}
-    {/* <Location/> */}
+    <Login/> 
+    {/* <Navigate/> 
+    <Login/> 
+    <Chain/> 
+    <Location/> */}
     </>
 }
 
