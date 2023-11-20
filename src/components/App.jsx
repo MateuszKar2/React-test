@@ -42,14 +42,12 @@
 //  )
 // }
 
- import { App10 } from "./10-nawigacja/App10";
 
 
   export const App = () => {
   return (
     <>
     
-      <App10></App10>
 
 
    {/* <div
