@@ -1,16 +1,13 @@
-import { Navigate } from "./Navigate";
-import { Login } from "./Login";
-import { Chain } from "./Chain";
-import { Location } from "./Location";
+// import { Login } from "./Login";
+// import { Location } from "./Location";
+import { Products } from "./Products";
 
 
 export const App10 = () => {
     <>
-    <Login/> 
-    {/* <Navigate/> 
-    <Login/> 
-    <Chain/> 
-    <Location/> */}
+    {/* <Login/>  */}
+    <Products/>
+    {/* <Location/>  */}
     </>
 }
 
