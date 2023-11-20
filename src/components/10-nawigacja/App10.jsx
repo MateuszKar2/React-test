@@ -6,10 +6,10 @@ import { Location } from "./Location";
 
 export const App10 = () => {
     <>
-    <Navigate/>
-    <Login/>
-    <Chain/>
-    <Location/>
+    {/* <Navigate/> */}
+    {/* <Login/> */}
+    {/* <Chain/> */}
+    {/* <Location/> */}
     </>
 }
 
@@ -31,4 +31,3 @@ export const App10 = () => {
 //Create React App wewnętrznie wykorzystuje Webpack jak moduł budujący i wspiera dzielenie kodu bez dodatkowej konfiguracji.
 //Dzielenie kodu na podstawie ścieżek jest obowiązkowe w dowolnej aplikacji.
 
-dsafsdfsdfdsgf

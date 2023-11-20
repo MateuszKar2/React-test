@@ -42,14 +42,14 @@
 //  )
 // }
 
-  import { App10 } from "./10-nawigacja";
+ import { App9 } from "./09-nawigacja/components/App9";
 
 
   export const App = () => {
   return (
     <>
     
-
+      <App9></App9>
 
 
    {/* <div
