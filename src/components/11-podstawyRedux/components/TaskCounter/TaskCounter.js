@@ -1,4 +1,6 @@
-
+//Komponentowi TaskCounter niezbędna jest tablica zadań z właściwości tasks statusu Redux, 
+//dlatego funkcja selektor będzie wyglądała jak state => state.tasks. 
+//Na podstawie tych danych możemy obliczyć dane pochodne ilości aktywnych i wykonanych zadań.
 
 // Importujemy hook
 import { useSelector } from "react-redux";

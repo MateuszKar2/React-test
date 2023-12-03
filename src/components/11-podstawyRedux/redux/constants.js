@@ -3,3 +3,5 @@
 
 
 export const statusFilters = Object.freeze({  all: "all",  active: "active",  completed: "completed",});
+
+//Wykorzystujemy metodę aby "zamrozić" obiekt wartości filtra i zapobiec jego przypadkowej zmianie po odnośniku w miejscach importu.
