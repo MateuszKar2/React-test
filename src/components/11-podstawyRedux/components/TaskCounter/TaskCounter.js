@@ -6,6 +6,7 @@
 import { useSelector } from "react-redux";
 
 export const TaskCounter = () => {
+
   // Otrzymujemy tablicę zadań ze statusu Redux
   const tasks = useSelector(state => state.tasks);
 
