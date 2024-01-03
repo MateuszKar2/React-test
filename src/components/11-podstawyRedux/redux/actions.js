@@ -43,3 +43,7 @@ export const setStatusFilter = value => {
 
 //Akcje powinny zawierać w sobie minimalny niezbędny zestaw informacji, wystarczający do zmiany statusu. Na przykład, 
 //przy usunięciu zadania wystarczy przekazać jego identyfikator, a nie ogólnie cały obiekt zadania.
+
+//Aby poinformować store o tym, że w interfejsie zaszło jakieś zdarzenie, należy wysłać akcję.
+// W tym celu w bibliotece React Redux znajduje się hook
+// => TaskForm.js
