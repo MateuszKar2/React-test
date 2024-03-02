@@ -42,22 +42,17 @@
 //  )
 // }
 
-import { ReactContent } from "./01-aplikacjeWebowe/pages/ReactContent";
-import { ReactContentTwo } from "./01-aplikacjeWebowe/pages/ReactContentTwo";
-import { Product } from "./01-aplikacjeWebowe/pages/Product";
-import { ProductTwo } from "./01-aplikacjeWebowe/pages/ProductTwo";
+import { Webowe } from "./01-aplikacjeWebowe/pages/Webowe";
+import { Style } from "./02-stylizacja/Style";
 
   export const App = () => {
   return (
     <>
-      <ReactContent></ReactContent>
-      <ReactContentTwo></ReactContentTwo>
-      <Product></Product>
-      <ProductTwo 
-      imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
-      price={18.99}
-      name="Burger"
-      />
+    <div>
+      {/* <Webowe></Webowe> */}
+      <Style></Style>
+    </div>
+      
 
 
    {/* <div
