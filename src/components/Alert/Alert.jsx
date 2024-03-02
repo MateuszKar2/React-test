@@ -9,18 +9,6 @@
     fontWeight: 700,
 };
 
-const getBgColor = variant => {
-    switch (variant) {
-        case "info":
-            return "blue";
-        case "success":
-            return "green";
-        case "error":
-            return "orange";
-        default:
-            throw new Error(`Unsupported variant prop value - ${variant}`);
-    }
-}
 
 export const Alert = ({ children, variant }) => {
     return (
