@@ -1,3 +1,5 @@
+//Wprowadzenie do React
+
 //Kilka lat temu strony budowano inaczej:
 //Budowano kilka stron mało ze sobą powiązanych
 //Wykorzystywano architekture klijent-serwer
