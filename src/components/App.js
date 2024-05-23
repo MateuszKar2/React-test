@@ -1,14 +1,15 @@
 import Boks from "./Boks";
 
 
-export const App = () => {
+
+const App = () => {
 
     return (
         <>
-            <Boks
+            <Boks>
             title="Harry Potter"
             price={37.99}
-            />
+            </Boks>
         </>
     )
 }

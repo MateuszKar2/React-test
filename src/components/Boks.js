@@ -1,34 +1,27 @@
+import PropTypes from 'prop-types';
+import React from 'react';
 
-
-export const Boks = (props) => {
+const Boks = ({title, price}) => {
+    return (
     <>
-        <p>Title:{props.title}</p>
-            <div>Price:{props.price}</div>
-                <button type="button"></button>
+        <p>Title:{title}</p>
+        <div>Price:{price}</div>
+        <button type="button">Buy this book</button>
     </>
+    )
 }
 
 export default Boks;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Boks.propTypes = {
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+}
 
 // Utworzyć komponent
 // przekazać propsy
 // Domyślna wartość propsów
-// props.children
+// props.children +
 // propTypes
 // operatory warunkowe, logiczne, ternary
 // zbiory i metoda .map
