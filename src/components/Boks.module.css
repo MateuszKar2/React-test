@@ -1,0 +1,10 @@
+
+.text {
+    color: blue;
+    cursor: pointer;
+}
+
+.info {
+    composes: text;
+    color: green;
+}
