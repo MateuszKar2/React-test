@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styles from './Boks.module.css';
+
+
+
 
 const Boks = ({title, price, children}) => {
 
     return (
     <>
-        {price > 29.95 ? (
-            <p>Price:{price}</p>           
+        {price > 39.95 ? (
+            <p className={styles.text}>
+                Price:{price}</p>           
         ) : (
-            <div>Price:{price}, book is on sale</div>
+            <div className={styles.info}>
+            Price:{price}, book is on sale</div>
         )}
         {title.length > 0 && (
             <div>Titles: {title} and {children} 
@@ -32,10 +38,14 @@ export default Boks;
 // props.children 
 // propTypes
 // operatory warunkowe, logiczne, ternary
-// zbiory i metoda .map
+// zbiory i metoda .map !
 
 
 //dodać styl wbudowany(1)
 //Vanilla CSS(1)
 //Napisać CSS-module
 //Dodać do głównego css normalize
+
+
+//przenieść plik z danymi do data/book.json
+//wykorzystać style 
