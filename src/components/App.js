@@ -1,6 +1,6 @@
 import Boks from "./Boks";
 import BookList from "./BookList";
-
+// import data from '../data/book.json';
 const bestBooks = [
     { id: "1", name: "Kamień Filozoficzny" },
     { id: "2", name: "Komnata Tajemnic" },
