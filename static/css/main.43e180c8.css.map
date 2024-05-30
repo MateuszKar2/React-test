@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.43e180c8.css","mappings":"AACA,mBACI,UAAW,CACX,cACJ,CAEA,kBAEI,WACJ","sources":["components/Boks.module.css"],"sourcesContent":["\n.text {\n    color: blue;\n    cursor: pointer;\n}\n\n.info {\n    composes: text;\n    color: green;\n}"],"names":[],"sourceRoot":""}
