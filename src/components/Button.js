@@ -6,46 +6,21 @@ import React,{Component} from 'react';
 
 class Button extends Component {
 
-    static defaultProps = {
-        step: 1,
-        initialValue: 0,
-    };
+    state = {isOpen: false};
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            value: this.props.initialValue,
-        }
+    toggle = () => {
+        this.setState(state => ({ isOpen: !state.isOpen}))
     }
 
-
-    handleIncrement(evt) {
-        console.log("Add this product", evt)
-        console.log("this.props", this.props)
-    }
-
-    handleDecrement(evt) {
-        console.log("Remove this product", evt)
-        console.log("this.props", this.props)
-    }
 
     render(){
-        const {step} = this.step;
+        const {isOpen} = this.state;
+        const {children} = this.props;
 
         return(
             <div>
-                <span>{this.state.value}</span>
-                <button 
-                type="button"
-                onClick={this.handleIncrement}
-                >Increment by {step}</button>
-
-                <button 
-                type="button"
-                onClick={this.handleDecrement}
-                >Decrement by {step}</button>
-
+                <button onClick={this.toggle}>{isOpen ? "Now" : "Later"}</button>
+                {isOpen && children}
             </div>
         )
     }

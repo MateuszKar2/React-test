@@ -1,6 +1,7 @@
 import Boks from "./Boks";
 import BookList from "./BookList";
 import Button from "./Button";
+import LoginForm from "./LoginForm";
 // import data from '../data/book.json';
 const bestBooks = [
     { id: "1", name: "Kamień Filozoficzny" },
@@ -23,6 +24,7 @@ const App = () => {
             />
             </Boks>
             <Button/>
+            <LoginForm/>
         </>
     )
 }
