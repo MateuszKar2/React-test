@@ -1,0 +1,33 @@
+.statistics {
+    background-color: white;
+    border: 5px solid greenyellow;
+    text-align: center;
+    width: 500px;
+    margin-left: 10%;
+}
+
+.title {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

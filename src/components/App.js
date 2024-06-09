@@ -1,31 +1,28 @@
-import Boks from "./Boks";
-import BookList from "./BookList";
-import Button from "./Button";
-import LoginForm from "./LoginForm";
-// import data from '../data/book.json';
-const bestBooks = [
-    { id: "1", name: "Kamień Filozoficzny" },
-    { id: "2", name: "Komnata Tajemnic" },
-    { id: "3", name: "Więźień Askabanu" },
-    { id: "4", name: "Czara Ognia" },
-    { id: "5", name: "Zakon Feniksa" },
-]
+import Profile from './Profile/Profile'
+import Statistic from './Statistic/Statistic'
+
+
+import user from './Data/user.json'
+import data from './Data/data.json'
+import friends from './Data/friends.json'
+import transactions from './Data/transatcions.json'
+
+
 
 const App = () => {
 
     return (
         <>
-            <Boks
-            title="Harry Potter"
-            price={37.99}
-            >
-            <BookList
-            books={bestBooks}
-            />
-            </Boks>
-            <Button/>
-            <LoginForm/>
-        </>
+            <Profile
+            username={user.username}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}/>
+            <Statistic
+            stats={data}
+            title="Upload stats"/>
+         </>
     )
 }
 
