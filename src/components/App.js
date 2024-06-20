@@ -1,31 +1,25 @@
-import Profile from './Profile/Profile';
-import Statistic from './Statistic/Statistics';
-import FriendList from './FriendList/FriendList';
+import Book from "./Book/Book";
+import Button from "./Button";
 
-import user from './Data/user.json'
-import data from './Data/data.json'
-import friends from './Data/friends.json'
-// import transactions from './Data/transatcions.json'
-
+const favouriteBooks = [
+    { id: "id-1", name: "Kamień Filozoficzny" },
+    { id: "id-2", name: "Komnata Tajemnic" },
+    { id: "id-3", name: "Wieźień Azkabanu" },
+    { id: "id-4", name: "Czara Ognia" },
+  ];
 
 
 const App = () => {
 
     return (
         <>
-            <Profile
-            username={user.username}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}/>
-            <Statistic
-            stats={data}
-            title="Statistcs"/>
-            <FriendList
-            friends={friends}
+            <h1>List of book</h1>
+            <Book 
+            books={favouriteBooks}            
             />
-         </>
+            <Button></Button>
+
+        </>
     )
 }
 

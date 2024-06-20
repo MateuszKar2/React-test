@@ -1,0 +1,10 @@
+.books {
+    background-color: #8fb68d;
+}
+
+.book {
+    composes: books;
+    padding: 10px;
+    color: #3d1f62;
+    background-color: rgb(173, 181, 173);
+}
