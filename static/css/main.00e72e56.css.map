@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.00e72e56.css","mappings":"AAAA,oBACI,wBACJ,CAEA,kBAII,wBAAoC,CADpC,aAAc,CADd,YAGJ","sources":["components/Book/Book.module.css"],"sourcesContent":[".books {\n    background-color: #8fb68d;\n}\n\n.book {\n    composes: books;\n    padding: 10px;\n    color: #3d1f62;\n    background-color: rgb(173, 181, 173);\n}"],"names":[],"sourceRoot":""}
