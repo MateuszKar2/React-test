@@ -1,5 +1,6 @@
 import Book from "./Book/Book";
 import Button from "./Button";
+import Form from "./Form";
 
 const favouriteBooks = [
     { id: "id-1", name: "Kamień Filozoficzny" },
@@ -18,6 +19,7 @@ const App = () => {
             books={favouriteBooks}            
             />
             <Button></Button>
+            <Form></Form>
 
         </>
     )
