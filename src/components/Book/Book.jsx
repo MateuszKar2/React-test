@@ -1,4 +1,5 @@
 import css from './Book.module.css';
+import Button from 'components/Button/Button';
 
 const Book = ({books}) => {
 
@@ -6,7 +7,7 @@ const Book = ({books}) => {
         <>
             <ul className={css.books}>
                 {books.map(book => (
-                    <li key={book.id} className={css.book}>Harry Potter and {book.name}</li>
+                    <li key={book.id} className={css.book}>Harry Potter and {book.name}<Button/></li>
                 ))}
             </ul>
         </>

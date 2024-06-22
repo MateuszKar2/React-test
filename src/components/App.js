@@ -1,6 +1,5 @@
 import Book from "./Book/Book";
-import Button from "./Button";
-import Form from "./Form";
+import { useState, useEffect } from "react";
 
 const favouriteBooks = [
     { id: "id-1", name: "Kamień Filozoficzny" },
@@ -11,6 +10,11 @@ const favouriteBooks = [
 
 
 const App = () => {
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        document.title = `You clicked ${value} times`;
+    })
 
     return (
         <>
@@ -18,8 +22,12 @@ const App = () => {
             <Book 
             books={favouriteBooks}            
             />
-            <Button></Button>
-            <Form></Form>
+            <div>
+                {value}
+                <button type="button" onClick={() => setValue(value + 2)}>
+                    Increment value by 1
+                </button>
+            </div>
 
         </>
     )
