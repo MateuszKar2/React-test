@@ -1,5 +1,6 @@
 .books {
     background-color: #8fb68d;
+    margin: 0;
 }
 
 .book {
@@ -7,4 +8,10 @@
     padding: 10px;
     color: #3d1f62;
     background-color: rgb(173, 181, 173);
+}
+
+.text {
+    background-color: #34658e;
+    text-align: center;
+    margin: 0;
 }

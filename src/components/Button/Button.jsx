@@ -1,32 +1,21 @@
-
-import React, {Component} from "react"
+import { useEffect, useState } from "react";
 import css from "./Button.module.css"
 
+const Button = () => {
+    const [value, setValue] = useState(0)
 
-class Button extends Component { 
-    state = {
-        isOpen: 'false'
-    };
+    useEffect(() => {
+        console.log('like')
+    },[value])
 
-toggle = () => {
-    this.setState(state => ({ isOpen: !state.isOpen}));
-};
+return (
+    <div>    
+        {value}
+        <button type="button" onClick={() => setValue(value + 1)} className={css.Button}>
+            Like
+        </button>
+    </div>
 
-    render() {
-        const {isOpen} = this.state;
-        const {children} = this.props; 
-
-        return (
-        <>
-            <button className={css.button}
-            onClick={this.toggle}
-            > 
-                {isOpen ? "Buy book" : "Not buy"}
-            </button>    
-        </>
-        )
-
-    }
+);
 }
-
-export default Button
+export default Button;
