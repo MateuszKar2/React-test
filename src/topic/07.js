@@ -27,3 +27,13 @@
 //metody cyklu zyciowego pozwalają nam wykonywac operacje w różnych stadiach życia komponentu
 //hook useEffect zawiera w sobie 3 najważniejsze metody cyklu życiowego: componentDidMount,componentDidUpdate, componentWillUnmount
 //dzięki czemu możemy np.kierować zapytania o dane z backendu, dodawać subskrypcje wydarzeń itd...wykonywac w komponentach funkcyjnych
+
+//przyjmuje dwa argumenty: callback i ,,zależności"-(jeżeli nie przekażemy tablicy zależnoscić , efekt będzie wykonywać się przy każdym renderowaniu komponetu)
+
+//analogie: 
+//ComponentDidMount(pusta tablica)- callback zostanie wykonany tylko w trakcie montowania komponentu i nigdy więcej
+//ComponentDidUpdate(przekazanie zależności w tablicy)-zostanie wykonany przy zmianie jakiekolwiek zależności + przy montowaniu komponentu
+//ComponentWillUnmount(zwracamy kolejną funkcje(retunr))- wywołana podczas odmontowywania komponentu + przed każdym wywołaniem danego efektu/można usunąć subskrypcję zdarzeń, zatrzymać timery i anulować zapytania HTTP.
+
+`własne hooki`
+//hooki to funkcje, której nazwa powinna zaczynać się od przedrostka use

@@ -13,8 +13,8 @@ const App = () => {
     const [value, setValue] = useState(0);
 
     useEffect(() => {
-        document.title = `You clicked ${value} times`;
-    })
+        console.log(value);
+    }, [value]);
 
     return (
         <>
@@ -24,7 +24,7 @@ const App = () => {
             />
             <div>
                 {value}
-                <button type="button" onClick={() => setValue(value + 2)}>
+                <button type="button" onClick={() => setValue(value + 1)}>
                     Increment value by 1
                 </button>
             </div>
