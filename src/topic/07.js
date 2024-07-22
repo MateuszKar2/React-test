@@ -20,8 +20,8 @@
 //(2)funkcja pozwalająca na aktualizacje stanu- mozna ją wykorzystać w dowolnym miejscu/ wykorzystując destrukturyzacje można nadać dowolna nazwę zmiennym
 
 //w komponencie klasowym możemy utworzyc tylko jeden wspólny stan, 
-//w funkcyjnym- dowolna ilość fragmentów stanu niezaleznych od siebie (nie wpływa to na wydajność) +dla funkcyjnego
-//hooki można wywoływać tylko w ciele komponentu funkcyjnego(w innym wypadku wyrzuci błąd) -dla funkcyjnego
+//w funkcyjnym- dowolna ilość fragmentów stanu niezaleznych od siebie (nie wpływa to na wydajność) + dla funkcyjnego
+//hooki można wywoływać tylko w ciele komponentu funkcyjnego (w innym wypadku wyrzuci błąd) - dla funkcyjnego
 
 `useEffect`
 //metody cyklu zyciowego pozwalają nam wykonywac operacje w różnych stadiach życia komponentu
@@ -32,8 +32,8 @@
 
 //analogie: 
 //ComponentDidMount(pusta tablica)- callback zostanie wykonany tylko w trakcie montowania komponentu i nigdy więcej
-//ComponentDidUpdate(przekazanie zależności w tablicy)-zostanie wykonany przy zmianie jakiekolwiek zależności + przy montowaniu komponentu
-//ComponentWillUnmount(zwracamy kolejną funkcje(retunr))- wywołana podczas odmontowywania komponentu + przed każdym wywołaniem danego efektu/można usunąć subskrypcję zdarzeń, zatrzymać timery i anulować zapytania HTTP.
+//ComponentDidUpdate(przekazanie zależności w tablicy)-zostanie wykonany przy montowaniu komponentu + przy zmianie jakiekolwiek zależności 
+//ComponentWillUnmount(zwracamy kolejną funkcje(return))- wywołana podczas odmontowywania komponentu + przed każdym wywołaniem danego efektu/można usunąć subskrypcję zdarzeń, zatrzymać timery i anulować zapytania HTTP.
 
 `własne hooki`
 //hooki to funkcje, której nazwa powinna zaczynać się od przedrostka use

@@ -1,9 +1,9 @@
 
 .button {
-   display: flex;
+   width: 100px;
+   height: 30px;
 }
 
-.button:hover {
-    background-color: greenyellow;
-    border-color: green;
+.button__value:hover {
+    background-color: green;;
 }
