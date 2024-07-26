@@ -9,7 +9,7 @@ const Button = () => {
     },[value]);
 
 return (
-    <div>    
+    <div>  
         {value}
         <button type="button" onClick={() => setValue(value + 1)} className={css.button}>
             Like
