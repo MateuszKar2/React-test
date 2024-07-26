@@ -2,11 +2,21 @@
 //Dane sa przekazywane z góry na dół za pomoca propsów, ten hook pozwala nam ominąć tą zasadę
 //Dane mogą być przekazane od dostawcy do użytkownika
 
-//Komponent Provider jest wykorzystywany do przekazania kontekstu od dostawcy do odbiorcy:
-
-    //dostawca
 //Owijamy nasz plik index.js lub App.js za pomocą komponentu <Context Provider (przekazując) value={}>
+//Hook useContext() - działa w zalezności provider/consument
+                    //useContext() wymusi re-render Komponentu przy każdej wykrytej zmianie kontekstu
+                    //wartość kontekstu nie musi byc tylko statyczna, możemy również przekazywać dane dynamiczne
 
-    //odbiorca
-//Hook useContext() - zwraca wartość najbliższego provaidera, w przypadku zmiany wartości kontekstu,
-                    //useContext() wymusi re-render Komponentu
+
+`useRef`
+//Hook useRef() - w momencie utworzenia ma jedną wartość ,,current"
+                 //wartość przypisane do ref.current bedzie stabilna i nie zmieniała się podczas rerenderów
+                 //przypisanie refa do DOMu odbywa się poprzez atrybut ref
+                 //Wartość refa jest dostępna dopiero po zamontowaniu
+                 //Zmiana wartości ref nie wpływa na aktualizacje komponentu i nie wywołuje ponownego renderowania
+                 //Przekazuje Ref() od rodzica do dziecka - forwardRef
+
+`useMemo`
+//Hook uzywany do zaawansowanych obliczeń dużej ilości danych.
+//Zapietuje wynik obliczeń liczb. Jeżeli liczby się nie zminiły, ponownie nie wykonuje działania. Tzwn. memoizacja.
+//No. Mamy 1000 liczb, z których każdą mnożymy przez każdą 1 000 * 1 000= 1 000 000, przy zmianie jednej liczby, memoizacja powoduje że zostaje wykonane tysiąc obliczeń, a nie milion
