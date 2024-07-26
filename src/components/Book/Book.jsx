@@ -3,6 +3,7 @@ import Button from 'components/Button/Button';
 
 const Book = ({books}) => {
 
+
     return(
         <>
             <h2 className={css.text}>Which book do you like the most?</h2>
@@ -12,7 +13,7 @@ const Book = ({books}) => {
                     key={book.id} 
                     className={css.book}
                     >
-                    Harry Potter and {book.name}
+                    {book.id}. Harry Potter and {book.name}
                     <Button/>
                     </li>
                 ))}
