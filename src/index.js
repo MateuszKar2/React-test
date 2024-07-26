@@ -1,18 +1,18 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 // import css from './index.css'
 import App from './components/App'
+import { UserContext } from 'components/userContext';
 
-const MyContext = createContext(defaultValue);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MyContext.Provider value={"John"}>    
+  <React.StrictMode>   
       <BrowserRouter>
-        <App/>
+        <UserContext.Provider value={{username: "Władca Pierścieni"}}>
+          <App/>
+        </UserContext.Provider>
       </BrowserRouter>
-    </MyContext.Provider>
   </React.StrictMode>
 );
 
