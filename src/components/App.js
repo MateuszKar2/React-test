@@ -1,10 +1,11 @@
 import Book from "./Book/Book";
+import Movies from "./Movies/Movies";
 
 const favouriteBooks = [
-    { id: "id-1", name: "Kamień Filozoficzny" },
-    { id: "id-2", name: "Komnata Tajemnic" },
-    { id: "id-3", name: "Wieźień Azkabanu" },
-    { id: "id-4", name: "Czara Ognia" },
+    { id: "1", name: "Kamień Filozoficzny" },
+    { id: "2", name: "Komnata Tajemnic" },
+    { id: "3", name: "Wieźień Azkabanu" },
+    { id: "4", name: "Czara Ognia" },
   ];
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
             <Book 
             books={favouriteBooks}            
             />
+            <Movies/>
         </>
     )
 };
