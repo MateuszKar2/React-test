@@ -1,21 +1,24 @@
-import Book from "./Book/Book";
-import Movies from "./Movies/Movies";
+import MyHobby from "./pages/MyHobby";
+import Autumn from "./pages/Autumn";
+import Spring from "./pages/Spring";
+import Summer from "./pages/Summer";
+import Winter from "./pages/Winter";
+import { Routes, Route } from "react-router-dom";
 
-const favouriteBooks = [
-    { id: "1", name: "Kamień Filozoficzny" },
-    { id: "2", name: "Komnata Tajemnic" },
-    { id: "3", name: "Wieźień Azkabanu" },
-    { id: "4", name: "Czara Ognia" },
-  ];
 
 const App = () => {
     return (
         <>
-            <h1>List of book</h1>
-            <Book 
-            books={favouriteBooks}            
-            />
-            <Movies/>
+            <div>
+                <MyHobby/>
+                <Routes>
+                    <Route path="/" element={<MyHobby/>}/>
+                    <Route path="/autumn" element={<Autumn/>}/>
+                    <Route path="/spring" element={<Spring/>}/>
+                    <Route path="/summer" element={<Summer/>}/>
+                    <Route path="/winter" element={<Winter/>}/>
+                </Routes>
+            </div>
         </>
     )
 };
