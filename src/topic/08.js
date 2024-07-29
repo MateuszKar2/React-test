@@ -17,6 +17,8 @@
                  //Przekazuje Ref() od rodzica do dziecka - forwardRef
 
 `useMemo`
-//Hook uzywany do zaawansowanych obliczeń dużej ilości danych.
-//Zapietuje wynik obliczeń liczb. Jeżeli liczby się nie zminiły, ponownie nie wykonuje działania. Tzwn. memoizacja.
-//No. Mamy 1000 liczb, z których każdą mnożymy przez każdą 1 000 * 1 000= 1 000 000, przy zmianie jednej liczby, memoizacja powoduje że zostaje wykonane tysiąc obliczeń, a nie milion
+//Hook uzywany do zaawansowanych obliczeń, dużej ilości danych.
+//Zapamiętuje wynik obliczeń liczb. Jeżeli liczby się nie zminiły, ponownie nie wykonuje działania. Tzwn. memoizacja.
+//Np. mamy 1000 liczb, z których każdą mnożymy przez każdą 1 000 * 1 000= 1 000 000, przy zmianie jednej liczby, memoizacja powoduje że zostaje wykonane tysiąc obliczeń, a nie milion
+//Przyjmuje dwa argumenty: funkcje i tablice zależności(useState), jeżeli tablica zależności jest pusta, używanie hooka jest bez sensu ponieważ render następuje za każdym razem
+
