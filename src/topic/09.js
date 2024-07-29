@@ -36,4 +36,8 @@
 //Navlink rózni się tym że otrzymuje klasę ".active", kiedy bieżacy URL pokrywa się z wartością propsa "to"- można to wykorzystac do zmiany stylów
 
 `Parametry URL`
+//Są analogiczne do poarametrów funkcji, mają jedną nazwe ale mogą mieć różne wartości
+//Nie ma senu określanie oddzielnej ściezki dla posta na blogu, moga byc ich tysiące
+//Dlatego zamiast tego, możemy zadeklarowac jedną scieżkę z dynamicznymi parametrami(poprzedzamy parametr :)
+
 
