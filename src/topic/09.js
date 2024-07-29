@@ -38,6 +38,19 @@
 `Parametry URL`
 //Są analogiczne do poarametrów funkcji, mają jedną nazwe ale mogą mieć różne wartości
 //Nie ma senu określanie oddzielnej ściezki dla posta na blogu, moga byc ich tysiące
-//Dlatego zamiast tego, możemy zadeklarowac jedną scieżkę z dynamicznymi parametrami(poprzedzamy parametr :)
+//Dlatego zamiast tego, możemy zadeklarowac jedną scieżkę z dynamicznymi parametrami(poprzedzamy parametr znakiem - :)
 
+//hook useParams - zwraca obiekt ze wszystkim określonymi parametrami, zdefiniowanymi w Routes
 
+`Zagnieżdzone ścieżki`
+//Pozwalają opisać logikę "strony w stronie", tzn. wyswietla się komponent rodzica, który jest cały czas obecny a komponenty dzieci zmieniają się
+//Route- ścieżki dzieći umieszczamy wewnątrz rodzica
+//Scięzki dzieci zapisują się bez "/", chyba że byłaby potrzeba napisania odnośnika do zupełnie innej strony
+//komponent Outlet wskazuje gdzie mają renderowac się kompoenty-dzieci w komponencie -rodzicu
+
+`Ścieżki indeksowe`
+//Nie raz chcemy aby treść powtarzała się na różnych stronach, np. menu nawigacji
+//Do tego tworzymy oddzielny komponent SharedLayout, i przenosimy tam logike związaną z routingiem (którą chcemy wyswietlać na każdej stronie)
+//Owijamy w App tym komponentem wszystkie route i renderujemy go na adresie- /
+//Poprzedni- / przenosimy na scieżke index.js
+//Dodajemy do komponentu z routingiem, komponent Outlet
