@@ -20,7 +20,7 @@
 //Przytoczenie typów, jeżeli parametry to liczby lub boolean można to zrobic za pomoca wbudowanej klasy: Number(value), Boolean(value)
 //Jeżeli parametrów jest wiele, wtedy możemy przekształcić parametry w obiekt i dokonać memoizacji
 
-//Do zmiany wartości wykorzystujemy useSearchParams() - funkvja aktualizująca obiekt zapytań :)
+//Do zmiany wartości wykorzystujemy useSearchParams() - funkcja aktualizująca obiekt zapytań :)
 //W bardziej zaawansowanych projektach przy aktualizacji parametrów możny dokonać efektu np. przesłać formularz
 
 `Obiekt lokalizaji`
