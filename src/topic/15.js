@@ -1,4 +1,4 @@
-`Uzytkownicy`
+`Użytkownicy`
 
 `Konta`
 //Pracujemy z nimi w apkach, zarówno na frontendzie jak i backhendzie
